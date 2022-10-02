@@ -1,0 +1,111 @@
+.bg-Nav{
+    background-color: #353a40;
+}
+.text-black{
+    color: black;
+}
+.imagenIzq{
+    height: 100%;
+    width:100%;
+    background-image: url("../assets/imagenes/honolulu.jpg");
+    background-size: cover;
+}
+
+.contenidoDer{
+    height: 100%;
+    padding: 2rem ;
+    background-color: #343333;
+    color:white;
+    font-size: 1rem;
+}
+.tam{
+    height: 70vh;
+}
+
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.col{
+    padding: 1em;
+}
+
+.d-block{
+    filter: brightness(50%);
+}
+nav{
+position: fixed;
+}
+.contenedor{
+    position: relative;
+    display: inline-block;
+    top: 0;
+}
+.text-carousel{
+    position: absolute;
+    top: 45%;
+    padding-right: 10%;
+    padding-left: 50%;
+    color: white;
+    text-align: right;
+}
+.link-ticket{
+    color: #299844;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #6e6961;
+}
+.btn-green{
+    color: #fff;
+    background-color: #29a744;
+    border-color: #285829;
+}
+.btn-lightgreen{
+    color:#fff;
+    background-color: #96c93e;
+    border-color: #bfde8a;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-top: 20px;
+    background-color: #1f5270;
+}
+.links-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.text-der{
+    font-size: 1rem;
+}
+.bg-der{
+    background-color: #353a40;
+}
+.charla{
+    text-decoration: underline;
+}
+.aclaracion{
+    color:#8b9297;
+}
+.footer-link{
+    color:#fff;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    text-decoration: none;
+}
+.conf-link{
+    color:#fff;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
