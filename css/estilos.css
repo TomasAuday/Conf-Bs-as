@@ -1,20 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.justificado{
+    justify-content: end;
+}
 .bg-Nav{
     background-color: #353a40;
 }
 .text-black{
     color: black;
 }
-.imagenIzq{
-    height: 100%;
-    width:100%;
-    background-image: url("../assets/imagenes/honolulu.jpg");
-    background-size: cover;
+.container-img-izq{
+    width:50%;
 }
-
-.contenidoDer{
-    height: 100%;
-    padding: 2rem ;
-    background-color: #343333;
+.container-text-der{
+    width:50%;
+    background-color: #353a40;
     color:white;
     font-size: 1rem;
 }
@@ -22,12 +25,6 @@
     height: 70vh;
 }
 
-
-header{
-    position: sticky;
-    top: 0;
-    z-index: 999;
-}
 .col{
     padding: 1em;
 }
@@ -35,14 +32,27 @@ header{
 .d-block{
     filter: brightness(50%);
 }
-nav{
-position: fixed;
+.sectionPrincipal{
+    background-image: linear-gradient(to right,rgb(0 0 0 /.5),rgb(0 0 0 /.5)), url("../assets/imagenes/ba1.jpg");
+    height:100vh;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
 }
-.contenedor{
-    position: relative;
-    display: inline-block;
-    top: 0;
+.contenidoPrincipal{
+    width: 60%;
+    text-align: right;
+    color:white;
 }
+.contenidoPrincipal{
+    height:100vh;
+    width: 100%;
+    display:inline-block;
+    justify-content:flex-end;
+    align-items:center;
+}
+
 .text-carousel{
     position: absolute;
     top: 45%;
@@ -71,25 +81,15 @@ position: fixed;
     background-color: #96c93e;
     border-color: #bfde8a;
 }
-.footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100px;
-    margin-top: 20px;
+.footer{    
     background-color: #1f5270;
 }
 .links-footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 80%;
+    justify-content: space-between;
 }
 .text-der{
     font-size: 1rem;
-}
-.bg-der{
-    background-color: #353a40;
 }
 .charla{
     text-decoration: underline;
@@ -108,4 +108,46 @@ position: fixed;
     padding: 0.5rem 1rem;
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+@media screen and (max-width:768px){
+    .justificado{
+        justify-content: center;
+    }
+    .centrar-tel{
+        justify-content: center;
+    }
+
+    .text-carousel{
+        line-height:1.5rem;
+        padding-right: 3%;
+        padding-left: 3%;
+        top:10%;
+        text-align: center;
+    }
+    .margen{
+        margin: 5vh 0 5vh;
+    }
+    .ajuste-nav{
+        padding-top:15% ;
+    }
+    .img-responsive{
+        height:70vh;
+        width: 100%
+    }
+    .container-img-izq{
+        width:100%;
+    }
+    .container-text-der{
+        width:100%;
+        padding: 2rem ;
+    }
+
+    .links-footer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-link{
+        padding: 1vh 0 1vh;
+    }
 }
