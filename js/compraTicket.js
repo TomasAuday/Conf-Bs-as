@@ -76,11 +76,11 @@ function validar(){
         valorTotal = valorTotal * ((100-descuentoJunior)/100);
     }
 
-    total.innerHTML = valorTotal;
+    total.innerHTML = "Total a Pagar: $ " + valorTotal;
 }
 function reset_total(){
     quitarClaseError();
-    total.innerHTML = ""; 
+    total.innerHTML = "Total a Pagar: $"; 
 }
 function quitarClaseError(){
     let x = document.querySelectorAll(".form-control",".form-select")
@@ -88,9 +88,8 @@ function quitarClaseError(){
         x[i].classList.remove('is-invalid');
     }
 }
-
 borrar.addEventListener('click', reset_total)
-resumen.addEventListener('click',validar)
+resumen.addEventListener('click', validar)
 
 
 
