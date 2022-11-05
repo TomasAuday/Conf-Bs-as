@@ -88,8 +88,10 @@ function quitarClaseError(){
         x[i].classList.remove('is-invalid');
     }
 }
+
 borrar.addEventListener('click', reset_total)
 resumen.addEventListener('click',validar)
+
 
 
 
