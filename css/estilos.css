@@ -109,6 +109,19 @@
     text-decoration: none;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
+.tarjeta{
+    margin: 0 0.5rem 0 0.5rem;
+}
+.w-65{
+    width: 65%;
+    
+}
+.column{
+    width: 35%;
+}
+.forzar{width: 0%;
+margin: 0;
+padding: 0;}
 
 @media screen and (max-width:768px){
     .justificado{
@@ -117,13 +130,16 @@
     .centrar-tel{
         justify-content: center;
     }
-
+    
     .text-carousel{
         line-height:1.5rem;
         padding-right: 3%;
         padding-left: 3%;
         top:10%;
         text-align: center;
+    }
+    .titulo{
+        font-size: 3rem;
     }
     .margen{
         margin: 5vh 0 5vh;
@@ -149,5 +165,11 @@
     }
     .footer-link{
         padding: 1vh 0 1vh;
+    }
+    .forzar{
+       
+    }
+    .tarjeta{
+        margin: 0.5rem 10px;
     }
 }
