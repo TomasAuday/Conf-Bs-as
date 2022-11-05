@@ -166,8 +166,9 @@ padding: 0;}
     .footer-link{
         padding: 1vh 0 1vh;
     }
-    .forzar{
-       
+    .w-65{
+        width: 90%;
+        
     }
     .tarjeta{
         margin: 0.5rem 10px;
