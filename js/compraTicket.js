@@ -52,21 +52,6 @@ function validar(){
 
     let valorTotal =(cantidad.value) * valorTicket;
 
-    switch(categoria.value) {
-        case 0: break;
-        case 1: 
-            valorTotal = valorTotal - (descuentoEstudiante/100);
-            break;
-        
-        case 2: 
-            valorTotal = valorTotal - (descuentoTrainee/100);
-            break;
-        
-        case 3: 
-            valorTotal = valorTotal - (descuentoJunior/100);
-            break;
-        
-    }
     if(categoria.value == 0){} 
     else if(categoria.value == 1){
         valorTotal = valorTotal * ((100-descuentoEstudiante)/100);
